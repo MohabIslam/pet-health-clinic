@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Pet Health Clinic - Contact" data-ar="عيادة صحة الحيوانات الأليفة - الاتصال">Pet Health Clinic - Contact</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="parallax-header" style="background-image: url('../assets/images/pexels-dcc-pets-1225360955-22504402.jpg');">
+        <h1 data-en="Pet Health Clinic" data-ar="عيادة صحة الحيوانات الأليفة">Pet Health Clinic</h1>
+        <button id="lang-toggle" data-en="Switch to Arabic" data-ar="تبديل إلى الإنجليزية">Switch to Arabic</button>
+    </header>
+    <div id="nav-placeholder"></div>
+    <main>
+        <section class="contact">
+            <h2 data-en="Book an Appointment" data-ar="حجز موعد">Book an Appointment</h2>
+            <div class="form-container">
+                <form id="appointment-form">
+                    <div class="form-group">
+                        <label data-en="Name:" data-ar="الاسم:">Name:</label>
+                        <div class="input-wrapper">
+                            <span class="icon">🐾</span>
+                            <input type="text" name="name" required>
+                        </div>
+                        <span class="error-message" data-en="Please enter your name" data-ar="يرجى إدخال اسمك"></span>
+                    </div>
+                    <div class="form-group">
+                        <label data-en="Email:" data-ar="البريد الإلكتروني:">Email:</label>
+                        <div class="input-wrapper">
+                            <span class="icon">📧</span>
+                            <input type="email" name="email" required>
+                        </div>
+                        <span class="error-message" data-en="Please enter a valid email" data-ar="يرجى إدخال بريد إلكتروني صحيح"></span>
+                    </div>
+                    <div class="form-group">
+                        <label data-en="Phone:" data-ar="الهاتف:">Phone:</label>
+                        <div class="input-wrapper">
+                            <span class="icon">📞</span>
+                            <input type="tel" name="phone" required>
+                        </div>
+                        <span class="error-message" data-en="Please enter a valid phone number" data-ar="يرجى إدخال رقم هاتف صحيح"></span>
+                    </div>
+                    <div class="form-group">
+                        <label data-en="Pet Type:" data-ar="نوع الحيوان الأليف:">Pet Type:</label>
+                        <div class="input-wrapper">
+                            <span class="icon">🐶</span>
+                            <select name="pet-type" required>
+                                <option value="" data-en="Select Pet Type" data-ar="اختر نوع الحيوان الأليف">Select Pet Type</option>
+                                <option value="dog" data-en="Dog" data-ar="كلب">Dog</option>
+                                <option value="cat" data-en="Cat" data-ar="قط">Cat</option>
+                                <option value="other" data-en="Other" data-ar="آخر">Other</option>
+                            </select>
+                        </div>
+                        <span class="error-message" data-en="Please select a pet type" data-ar="يرجى اختيار نوع الحيوان الأليف"></span>
+                    </div>
+                    <div class="form-group">
+                        <label data-en="Appointment Date:" data-ar="تاريخ الموعد:">Appointment Date:</label>
+                        <div class="input-wrapper">
+                            <span class="icon">📅</span>
+                            <input type="date" name="date" required>
+                        </div>
+                        <span class="error-message" data-en="Please select a date" data-ar="يرجى اختيار تاريخ"></span>
+                    </div>
+                    <div class="form-group">
+                        <label data-en="Message:" data-ar="الرسالة:">Message:</label>
+                        <div class="input-wrapper">
+                            <span class="icon">💬</span>
+                            <textarea name="message" required></textarea>
+                        </div>
+                        <span class="error-message" data-en="Please enter a message" data-ar="يرجى إدخال رسالة"></span>
+                    </div>
+                    <button type="submit" data-en="Book Now" data-ar="احجز الآن">
+                        <span class="submit-text" data-en="Book Now" data-ar="احجز الآن">Book Now</span>
+                        <span class="loader"></span>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+    <button class="chat-button" onclick="openChat()" data-en="Live Chat" data-ar="دردشة مباشرة">Live Chat</button>
+    <button class="back-to-top" onclick="scrollToTop()" data-en="Back to Top" data-ar="العودة إلى الأعلى">↑</button>
+    <script src="../js/script.js"></script>
+</body>
+</html>
